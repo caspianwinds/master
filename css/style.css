@@ -835,6 +835,8 @@ a:hover {
 
 .products .item img,
 .product .item img {
+    width: 300px;
+    height: 300px;
     -webkit-transition: .3s all ease;
     -o-transition: .3s all ease;
     transition: .3s all ease;
@@ -854,8 +856,9 @@ a:hover {
 
 .products .item .item-info,
 .product .item .item-info {
-    position: absolute;
+    position: inherit;
     bottom: 0;
+    margin-top: 80px;
     z-index: 2;
     width: 100%;
     -webkit-transform: translateY(-50%);
