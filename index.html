@@ -87,6 +87,18 @@
             -o-background-size: cover;
             background-size: cover;
         }
+        
+        @media only screen and (max-width: 768px) {
+            .desktop {
+                display: none;
+            }
+        }
+        
+        @media only screen and (min-width: 769px) {
+            .mobile {
+                display: none;
+            }
+        }
     </style>
 </head>
 
@@ -163,7 +175,7 @@
         </div>
 
         <header>
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div id="carouselExampleIndicators" class="carousel slide desktop" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -194,37 +206,68 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-        </header>
-        <div class="container" style="max-width: 100vw;background: #d5fefd; max-width: 100vw !important; padding: 2px !important;">
-            <div class="row align-items-center">
-                <div class="col-lg-5">
-                    <img src="images/new/person_transparent.png" alt="Image" class="img-fluid img-1">
+            <div id="carouselExampleIndicatorsm" class="carousel slide mobile data-ride=" carousel ">
+                <ol class="carousel-indicators ">
+                    <li data-target="#carouselExampleIndicatorsm " data-slide-to="0 " class="active "></li>
+                    <li data-target="#carouselExampleIndicatorsm " data-slide-to="1 "></li>
+                    <li data-target="#carouselExampleIndicatorsm " data-slide-to="2 "></li>
+                </ol>
+                <div class="carousel-inner " role="listbox ">
+                    <!-- Slide One - Set the background image for this slide in the line below -->
+                    <div class="carousel-item active " style="background-image: url( 'images/Banners/m1.jpg') ">
+                        <div class="carousel-caption d-none d-md-block ">
+                            <h2 class="display-4 "></h2>
+                            <p class="lead "></p>
+                        </div>
+                    </div>
+                    <!-- Slide Two - Set the background image for this slide in the line below -->
+                    <div class="carousel-item " style="background-image: url( 'images/Banners/m2.jpg') ">
+                        <div class="carousel-caption d-none d-md-block ">
+                            <h2 class="display-4 "></h2>
+                            <p class="lead "></p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-7" style="padding: 0px !important;">
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdE2LNjENeRL9niA-SH7QM7sXZqG6KKQUBacyNi40NaMhhjlg/viewform?embedded=true" style="height:880px; width: 100%;overflow: visible;" scrolling="no" frameborder="0">Loading…</iframe>
-                    <!-- <div style="height: 70px;margin-top: -70px;background: #fdfdfd;z-index: 99999999;position: relative;"></div> -->
+                <a class="carousel-control-prev " href="#carouselExampleIndicatorsm " role="button " data-slide="prev ">
+                    <span class="carousel-control-prev-icon " aria-hidden="true "></span>
+                    <span class="sr-only ">Previous</span>
+                </a>
+                <a class="carousel-control-next " href="#carouselExampleIndicatorsm " role="button " data-slide="next ">
+                    <span class="carousel-control-next-icon " aria-hidden="true "></span>
+                    <span class="sr-only ">Next</span>
+                </a>
+            </div>
+        </header>
+        <div class="container " style="max-width: 100vw;background: #d5fefd; max-width: 100vw !important; padding: 2px !important; ">
+            <div class="row align-items-center ">
+                <div class="col-lg-5 ">
+                    <img src="images/new/person_transparent.png " alt="Image " class="img-fluid img-1 ">
+                </div>
+                <div class="col-lg-7 " style="padding: 0px !important; ">
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdE2LNjENeRL9niA-SH7QM7sXZqG6KKQUBacyNi40NaMhhjlg/viewform?embedded=true " style="height:880px; width: 100%;overflow: visible; " scrolling="no " frameborder="0 ">Loading…</iframe>
+                    <!-- <div style="height: 70px;margin-top: -70px;background: #fdfdfd;z-index: 99999999;position: relative; "></div> -->
                 </div>
             </div>
         </div>
 
-        <!-- <div class="site-blocks-cover" data-aos="fade">
-            <div class="container">
+        <!-- <div class="site-blocks-cover " data-aos="fade ">
+            <div class="container ">
 
-                <div class="row align-items-center">
-                    <div class="col-lg-4 col-sm-0 text-center">
-                        <div class="featured-hero-product w-100">
-              <h1 class="mb-2">Madewell</h1>
+                <div class="row align-items-center ">
+                    <div class="col-lg-4 col-sm-0 text-center ">
+                        <div class="featured-hero-product w-100 ">
+              <h1 class="mb-2 ">Madewell</h1>
               <h4>Summer Collection</h4>
-              <div class="price mt-3 mb-5"><strong>1,499</strong> <del>$1,999</del></div>
-              <p><a href="#" class="btn btn-outline-primary rounded-0">Shop Now</a> <a href="#" class="btn btn-primary rounded-0">Shop Now</a></p>
+              <div class="price mt-3 mb-5 "><strong>1,499</strong> <del>$1,999</del></div>
+              <p><a href="# " class="btn btn-outline-primary rounded-0 ">Shop Now</a> <a href="# " class="btn btn-primary rounded-0 ">Shop Now</a></p>
             </div>   
 
-                        <img src="images/redbag.png" alt="Image" class="img-fluid img-1">
+                        <img src="images/redbag.png " alt="Image " class="img-fluid img-1 ">
 
 
                     </div>
-                    <div class="col-lg-8 align-self-end text-center text-lg-right">
-                        <img src="images/new/person_transparent.png" alt="Image" class="img-fluid img-1">
+                    <div class="col-lg-8 align-self-end text-center text-lg-right ">
+                        <img src="images/new/person_transparent.png " alt="Image " class="img-fluid img-1 ">
                     </div>
 
                 </div>
@@ -232,206 +275,45 @@
 
         </div> -->
 
-        <div class="site-section">
-            <div class="container">
-                <div class="row">
-                    <div class="title-section text-center col-12">
-                        <h2 class="text-uppercase">Best Selling</h2>
+        <div class="site-section ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="title-section text-center col-12 ">
+                        <h2 class="text-uppercase ">Best Selling</h2>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-12 block-3 products-wrap">
-                        <div class="nonloop-block-3 owl-carousel">
+                <div class="row ">
+                    <div class="col-md-12 block-3 products-wrap ">
+                        <div class="nonloop-block-3 owl-carousel ">
 
-                            <div class="product">
-                                <a href="#" class="item">
-                                    <img src="images/Products/Bags/FeaturedBag/front.jpg" alt="Image" class="img-fluid">
-                                </a>
-                            </div>
-
-                            <div class="product">
-                                <a href="#" class="item">
-                                    <!-- <span class="tag">Sale</span> -->
-                                    <img src="images/Products/Bags/FeaturedBag/back.jpg" alt="Image" class="img-fluid">
+                            <div class="product ">
+                                <a href="# " class="item ">
+                                    <img src="images/Products/Bags/FeaturedBag/front.jpg " alt="Image " class="img-fluid ">
                                 </a>
                             </div>
 
-                            <div class="product">
-                                <a href="#" class="item">
-                                    <img src="images/Products/Bags/FeaturedBag/left.jpg" alt="Image" class="img-fluid">
+                            <div class="product ">
+                                <a href="# " class="item ">
+                                    <!-- <span class="tag ">Sale</span> -->
+                                    <img src="images/Products/Bags/FeaturedBag/back.jpg " alt="Image " class="img-fluid ">
                                 </a>
                             </div>
 
-                            <div class="product">
-                                <a href="#" class="item">
-                                    <img src="images/Products/Bags/FeaturedBag/right.jpg" alt="Image" class="img-fluid">
+                            <div class="product ">
+                                <a href="# " class="item ">
+                                    <img src="images/Products/Bags/FeaturedBag/left.jpg " alt="Image " class="img-fluid ">
                                 </a>
                             </div>
 
-                            <div class="product">
-                                <a href="#" class="item">
-                                    <img src="images/Products/Bags/FeaturedBag/top.jpg" alt="Image" class="img-fluid">
+                            <div class="product ">
+                                <a href="# " class="item ">
+                                    <img src="images/Products/Bags/FeaturedBag/right.jpg " alt="Image " class="img-fluid ">
                                 </a>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="products-wrap border-top-0">
-            <div class="container-fluid">
-                <div class="row no-gutters products">
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="item">
-                            <img src="images/Products/Bags/Bag1/main.jpg" alt="Image" class="img-fluid">
-                            <div class="item-info">
-                                <h3></h3>
-                                <a target="_blank" href="https://www.amazon.in/Generic-Tri-Color-HandBag/dp/B084TNYS91/ref=sr_1_12?dchild=1&m=AZBC9HK1WLLV&marketplaceID=A21TJRUUN4KGV&qid=1582322089&s=merchant-items&sr=1-12">
-                                    <strong class="price"><img src="images/amazon.png">&nbsp;₹1498.00</strong>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="item">
-                            <img src="images/Products/Bags/Bag2/main.jpg" alt="Image" class="img-fluid">
-                            <div class="item-info">
-                                <h3></h3>
-                                <a target="_blank" href="https://www.amazon.in/Generic-Brown-Check-Small-HandBag/dp/B084TQ1R7R/ref=sr_1_7?dchild=1&m=AZBC9HK1WLLV&marketplaceID=A21TJRUUN4KGV&qid=1582322089&s=merchant-items&sr=1-7">
-                                    <strong class="price"><img src="images/amazon.png">&nbsp;1378.00</strong>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="item">
-                            <img src="images/Products/Bags/Bag3/main.jpg" alt="Image" class="img-fluid">
-                            <div class="item-info">
-                                <h3></h3>
-                                <a target="_blank" href="https://www.amazon.in/Generic-Black-Large-HandBag/dp/B084TPW429/ref=sr_1_9?dchild=1&m=AZBC9HK1WLLV&marketplaceID=A21TJRUUN4KGV&qid=1582322089&s=merchant-items&sr=1-9">
-                                    <strong class="price"><img src="images/amazon.png">&nbsp;₹1449.00</strong>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="item">
-                            <img src="images/Products/Bags/Bag4/main.jpg" alt="Image" class="img-fluid">
-                            <div class="item-info">
-                                <h3></h3>
-                                <a target="_blank" href="https://www.amazon.in/Green-Brown-Big-Sized-HandBag/dp/B084TPQF9K/ref=sr_1_11?dchild=1&m=AZBC9HK1WLLV&marketplaceID=A21TJRUUN4KGV&qid=1582322089&s=merchant-items&sr=1-11">
-                                    <strong class="price"><img src="images/amazon.png">&nbsp;₹1449.00</strong>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="item">
-                            <img src="images/Products/Bags/Bag5/main.jpg" alt="Image" class="img-fluid">
-                            <div class="item-info">
-                                <h3></h3>
-                                <a target="_blank" href="https://www.amazon.in/Classic-Brown-Bag-Small-HandBag/dp/B084TQCYQW/ref=sr_1_13?dchild=1&m=AZBC9HK1WLLV&marketplaceID=A21TJRUUN4KGV&qid=1582322089&s=merchant-items&sr=1-13">
-                                    <strong class="price"><img src="images/amazon.png">&nbsp;₹1498.00</strong>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="item">
-                            <img src="images/Products/Bags/Bag6/main.jpg" alt="Image" class="img-fluid">
-                            <div class="item-info">
-                                <h3></h3>
-                                <a target="_blank" href="https://www.amazon.in/Yellow-3d-Texure-Designed-HandBag/dp/B084TPVB71/ref=sr_1_10?dchild=1&m=AZBC9HK1WLLV&marketplaceID=A21TJRUUN4KGV&qid=1582322089&s=merchant-items&sr=1-10">
-                                    <strong class="price"><img src="images/amazon.png">&nbsp;₹1298.00</strong>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="item">
-                            <img src="images/Products/Bags/Bag7/main.jpg" alt="Image" class="img-fluid">
-                            <div class="item-info">
-                                <h3></h3>
-                                <a target="_blank" href="https://www.amazon.in/Generic-Black-Printed-HandBag/dp/B084TQRZK9/ref=sr_1_5?dchild=1&m=AZBC9HK1WLLV&marketplaceID=A21TJRUUN4KGV&qid=1582322089&s=merchant-items&sr=1-5">
-                                    <strong class="price"><img src="images/amazon.png">&nbsp;₹1249.00</strong>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="item">
-                            <img src="images/Products/Bags/Bag8/main.jpg" alt="Image" class="img-fluid">
-                            <div class="item-info">
-                                <h3></h3>
-                                <a target="_blank" href="https://www.amazon.in/dp/B0851GKLG8/ref=sr_1_4?dchild=1&m=AZBC9HK1WLLV&marketplaceID=A21TJRUUN4KGV&qid=1582322089&s=merchant-items&sr=1-4">
-                                    <strong class="price"><img src="images/amazon.png">&nbsp;₹650.00</strong>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="item">
-                            <img src="images/Products/Bags/Bag9/main.jpg" alt="Image" class="img-fluid">
-                            <div class="item-info">
-                                <h3></h3>
-                                <a target="_blank" href="https://www.amazon.in/dp/B0851J5185/ref=sr_1_1?dchild=1&m=AZBC9HK1WLLV&marketplaceID=A21TJRUUN4KGV&qid=1582322089&s=merchant-items&sr=1-1">
-                                    <strong class="price"><img src="images/amazon.png">&nbsp;₹1,789.00</strong>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="item">
-                            <img src="images/Products/Bags/Bag10/main.jpg" alt="Image" class="img-fluid">
-                            <div class="item-info">
-                                <h3></h3>
-                                <a target="_blank" href="https://www.amazon.in/Generic-Classic-Red-Handbag/dp/B084TQ1JV3/ref=sr_1_8?dchild=1&m=AZBC9HK1WLLV&marketplaceID=A21TJRUUN4KGV&qid=1582322089&s=merchant-items&sr=1-8">
-                                    <strong class="price"><img src="images/amazon.png">&nbsp;₹1478.00</strong>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="item">
-                            <img src="images/Products/Bags/Bag11/main.jpg" alt="Image" class="img-fluid">
-                            <div class="item-info">
-                                <h3></h3>
-                                <a target="_blank" href="https://www.amazon.in/Generic-Brown-Large-Sized-HandBag/dp/B084TQPMPS/ref=sr_1_6?dchild=1&m=AZBC9HK1WLLV&marketplaceID=A21TJRUUN4KGV&qid=1582322089&s=merchant-items&sr=1-6">
-                                    <strong class="price"><img src="images/amazon.png">&nbsp;₹1658.00</strong>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="item">
-                            <img src="images/Products/Bags/Bag13/main.jpg" alt="Image" class="img-fluid">
-                            <div class="item-info">
-                                <h3></h3>
-                                <a target="_blank" href="https://www.amazon.in/dp/B0851H9R32/ref=sr_1_3?dchild=1&m=AZBC9HK1WLLV&marketplaceID=A21TJRUUN4KGV&qid=1582322089&s=merchant-items&sr=1-3">
-                                    <strong class="price"><img src="images/amazon.png">&nbsp;₹1499.00</strong>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="item">
-                            <img src="images/Products/Bags/Bag14/main.jpg" alt="Image" class="img-fluid">
-                            <div class="item-info">
-                                <h3></h3>
-                                <a target="_blank" href="">
-                                    <strong class="price"><img src="images/amazon.png">&nbsp;Sold Out</strong>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="item">
-                            <img src="images/Products/Bags/Bag15/main.jpg" alt="Image" class="img-fluid">
-                            <div class="item-info">
-                                <h3></h3>
-                                <a target="_blank" href="https://www.amazon.in/dp/B0851HM149/ref=sr_1_2?dchild=1&m=AZBC9HK1WLLV&marketplaceID=A21TJRUUN4KGV&qid=1582322089&s=merchant-items&sr=1-2">
-                                    <strong class="price"><img src="images/amazon.png">&nbsp;₹2200.00</strong>
+                            <div class="product ">
+                                <a href="# " class="item ">
+                                    <img src="images/Products/Bags/FeaturedBag/top.jpg " alt="Image " class="img-fluid ">
                                 </a>
                             </div>
                         </div>
@@ -440,105 +322,266 @@
             </div>
         </div>
 
-        <!-- <div class="site-blocks-cover inner-page py-5" data-aos="fade">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-4 ml-auto order-lg-2 align-self-start">
-                        <div class="site-block-cover-content">
-                            <h2 class="sub-title">#New Summer Collection 2019</h2>
+        <div class="products-wrap border-top-0 ">
+            <div class="container-fluid ">
+                <div class="row no-gutters products ">
+                    <div class="col-12 col-md-6 col-lg-4 ">
+                        <div class="item ">
+                            <img src="images/Products/Bags/Bag1/main.jpg " alt="Image " class="img-fluid ">
+                            <div class="item-info ">
+                                <h3></h3>
+                                <a target="_blank " href="https://www.amazon.in/Generic-Tri-Color-HandBag/dp/B084TNYS91/ref=sr_1_12?dchild=1&m=AZBC9HK1WLLV&marketplaceID=A21TJRUUN4KGV&qid=1582322089&s=merchant-items&sr=1-12 ">
+                                    <strong class="price "><img src="images/amazon.png ">&nbsp;₹1498.00</strong>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 ">
+                        <div class="item ">
+                            <img src="images/Products/Bags/Bag2/main.jpg " alt="Image " class="img-fluid ">
+                            <div class="item-info ">
+                                <h3></h3>
+                                <a target="_blank " href="https://www.amazon.in/Generic-Brown-Check-Small-HandBag/dp/B084TQ1R7R/ref=sr_1_7?dchild=1&m=AZBC9HK1WLLV&marketplaceID=A21TJRUUN4KGV&qid=1582322089&s=merchant-items&sr=1-7 ">
+                                    <strong class="price "><img src="images/amazon.png ">&nbsp;1378.00</strong>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 ">
+                        <div class="item ">
+                            <img src="images/Products/Bags/Bag3/main.jpg " alt="Image " class="img-fluid ">
+                            <div class="item-info ">
+                                <h3></h3>
+                                <a target="_blank " href="https://www.amazon.in/Generic-Black-Large-HandBag/dp/B084TPW429/ref=sr_1_9?dchild=1&m=AZBC9HK1WLLV&marketplaceID=A21TJRUUN4KGV&qid=1582322089&s=merchant-items&sr=1-9 ">
+                                    <strong class="price "><img src="images/amazon.png ">&nbsp;₹1449.00</strong>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 ">
+                        <div class="item ">
+                            <img src="images/Products/Bags/Bag4/main.jpg " alt="Image " class="img-fluid ">
+                            <div class="item-info ">
+                                <h3></h3>
+                                <a target="_blank " href="https://www.amazon.in/Green-Brown-Big-Sized-HandBag/dp/B084TPQF9K/ref=sr_1_11?dchild=1&m=AZBC9HK1WLLV&marketplaceID=A21TJRUUN4KGV&qid=1582322089&s=merchant-items&sr=1-11 ">
+                                    <strong class="price "><img src="images/amazon.png ">&nbsp;₹1449.00</strong>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 ">
+                        <div class="item ">
+                            <img src="images/Products/Bags/Bag5/main.jpg " alt="Image " class="img-fluid ">
+                            <div class="item-info ">
+                                <h3></h3>
+                                <a target="_blank " href="https://www.amazon.in/Classic-Brown-Bag-Small-HandBag/dp/B084TQCYQW/ref=sr_1_13?dchild=1&m=AZBC9HK1WLLV&marketplaceID=A21TJRUUN4KGV&qid=1582322089&s=merchant-items&sr=1-13 ">
+                                    <strong class="price "><img src="images/amazon.png ">&nbsp;₹1498.00</strong>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 ">
+                        <div class="item ">
+                            <img src="images/Products/Bags/Bag6/main.jpg " alt="Image " class="img-fluid ">
+                            <div class="item-info ">
+                                <h3></h3>
+                                <a target="_blank " href="https://www.amazon.in/Yellow-3d-Texure-Designed-HandBag/dp/B084TPVB71/ref=sr_1_10?dchild=1&m=AZBC9HK1WLLV&marketplaceID=A21TJRUUN4KGV&qid=1582322089&s=merchant-items&sr=1-10 ">
+                                    <strong class="price "><img src="images/amazon.png ">&nbsp;₹1298.00</strong>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 ">
+                        <div class="item ">
+                            <img src="images/Products/Bags/Bag7/main.jpg " alt="Image " class="img-fluid ">
+                            <div class="item-info ">
+                                <h3></h3>
+                                <a target="_blank " href="https://www.amazon.in/Generic-Black-Printed-HandBag/dp/B084TQRZK9/ref=sr_1_5?dchild=1&m=AZBC9HK1WLLV&marketplaceID=A21TJRUUN4KGV&qid=1582322089&s=merchant-items&sr=1-5 ">
+                                    <strong class="price "><img src="images/amazon.png ">&nbsp;₹1249.00</strong>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 ">
+                        <div class="item ">
+                            <img src="images/Products/Bags/Bag8/main.jpg " alt="Image " class="img-fluid ">
+                            <div class="item-info ">
+                                <h3></h3>
+                                <a target="_blank " href="https://www.amazon.in/dp/B0851GKLG8/ref=sr_1_4?dchild=1&m=AZBC9HK1WLLV&marketplaceID=A21TJRUUN4KGV&qid=1582322089&s=merchant-items&sr=1-4 ">
+                                    <strong class="price "><img src="images/amazon.png ">&nbsp;₹650.00</strong>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 ">
+                        <div class="item ">
+                            <img src="images/Products/Bags/Bag9/main.jpg " alt="Image " class="img-fluid ">
+                            <div class="item-info ">
+                                <h3></h3>
+                                <a target="_blank " href="https://www.amazon.in/dp/B0851J5185/ref=sr_1_1?dchild=1&m=AZBC9HK1WLLV&marketplaceID=A21TJRUUN4KGV&qid=1582322089&s=merchant-items&sr=1-1 ">
+                                    <strong class="price "><img src="images/amazon.png ">&nbsp;₹1,789.00</strong>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 ">
+                        <div class="item ">
+                            <img src="images/Products/Bags/Bag10/main.jpg " alt="Image " class="img-fluid ">
+                            <div class="item-info ">
+                                <h3></h3>
+                                <a target="_blank " href="https://www.amazon.in/Generic-Classic-Red-Handbag/dp/B084TQ1JV3/ref=sr_1_8?dchild=1&m=AZBC9HK1WLLV&marketplaceID=A21TJRUUN4KGV&qid=1582322089&s=merchant-items&sr=1-8 ">
+                                    <strong class="price "><img src="images/amazon.png ">&nbsp;₹1478.00</strong>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 ">
+                        <div class="item ">
+                            <img src="images/Products/Bags/Bag11/main.jpg " alt="Image " class="img-fluid ">
+                            <div class="item-info ">
+                                <h3></h3>
+                                <a target="_blank " href="https://www.amazon.in/Generic-Brown-Large-Sized-HandBag/dp/B084TQPMPS/ref=sr_1_6?dchild=1&m=AZBC9HK1WLLV&marketplaceID=A21TJRUUN4KGV&qid=1582322089&s=merchant-items&sr=1-6 ">
+                                    <strong class="price "><img src="images/amazon.png ">&nbsp;₹1658.00</strong>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 ">
+                        <div class="item ">
+                            <img src="images/Products/Bags/Bag13/main.jpg " alt="Image " class="img-fluid ">
+                            <div class="item-info ">
+                                <h3></h3>
+                                <a target="_blank " href="https://www.amazon.in/dp/B0851H9R32/ref=sr_1_3?dchild=1&m=AZBC9HK1WLLV&marketplaceID=A21TJRUUN4KGV&qid=1582322089&s=merchant-items&sr=1-3 ">
+                                    <strong class="price "><img src="images/amazon.png ">&nbsp;₹1499.00</strong>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 ">
+                        <div class="item ">
+                            <img src="images/Products/Bags/Bag14/main.jpg " alt="Image " class="img-fluid ">
+                            <div class="item-info ">
+                                <h3></h3>
+                                <a target="_blank " href=" ">
+                                    <strong class="price "><img src="images/amazon.png ">&nbsp;Sold Out</strong>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 ">
+                        <div class="item ">
+                            <img src="images/Products/Bags/Bag15/main.jpg " alt="Image " class="img-fluid ">
+                            <div class="item-info ">
+                                <h3></h3>
+                                <a target="_blank " href="https://www.amazon.in/dp/B0851HM149/ref=sr_1_2?dchild=1&m=AZBC9HK1WLLV&marketplaceID=A21TJRUUN4KGV&qid=1582322089&s=merchant-items&sr=1-2 ">
+                                    <strong class="price "><img src="images/amazon.png ">&nbsp;₹2200.00</strong>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="site-blocks-cover inner-page py-5 " data-aos="fade ">
+            <div class="container ">
+                <div class="row align-items-center ">
+                    <div class="col-lg-4 ml-auto order-lg-2 align-self-start ">
+                        <div class="site-block-cover-content ">
+                            <h2 class="sub-title ">#New Summer Collection 2019</h2>
                             <h1>Jacket</h1>
-                            <p><a href="#" class="btn btn-black rounded-0">Shop Now</a></p>
+                            <p><a href="# " class="btn btn-black rounded-0 ">Shop Now</a></p>
                         </div>
                     </div>
-                    <div class="col-lg-8 order-1 align-self-end">
-                        <img src="images/model_woman_1.png" alt="Image" class="img-fluid">
+                    <div class="col-lg-8 order-1 align-self-end ">
+                        <img src="images/model_woman_1.png " alt="Image " class="img-fluid ">
                     </div>
                 </div>
             </div>
         </div> -->
 
 
-        <!--   <div class="site-blocks-cover inner-page py-5" data-aos="fade">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 ml-auto order-lg-2 align-self-start">
-                        <div class="site-block-cover-content">
-                            <h2 class="sub-title">#New Summer Collection 2019</h2>
+        <!--   <div class="site-blocks-cover inner-page py-5 " data-aos="fade ">
+            <div class="container ">
+                <div class="row align-items-center ">
+                    <div class="col-lg-6 ml-auto order-lg-2 align-self-start ">
+                        <div class="site-block-cover-content ">
+                            <h2 class="sub-title ">#New Summer Collection 2019</h2>
                             <h1>New Denim Coat</h1>
-                            <p><a href="#" class="btn btn-black rounded-0">Shop Now</a></p> 
+                            <p><a href="# " class="btn btn-black rounded-0 ">Shop Now</a></p> 
                         </div>
                     </div>
-                    <div class="col-lg-6 order-1 align-self-end">
-                        <img src="images/model_5.png" alt="Image" class="img-fluid">
+                    <div class="col-lg-6 order-1 align-self-end ">
+                        <img src="images/model_5.png " alt="Image " class="img-fluid ">
                     </div>
                 </div>
             </div>
         </div> -->
-        <footer class="site-footer custom-border-top">
-            <div class="container">
-                <div class="row mb-5">
-                    <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
-                        <a href="index.html" class="js-logo-clone"><img style="width: 300px;" src="images/footerlogo.jpg" alt="Logo"></a>
+        <footer class="site-footer custom-border-top ">
+            <div class="container ">
+                <div class="row mb-5 ">
+                    <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 ">
+                        <a href="index.html " class="js-logo-clone "><img style="width: 300px; " src="images/footerlogo.jpg " alt="Logo "></a>
 
-                        <!-- <div class="block-7">
-                            <h3 class="footer-heading mb-4">About Us</h3>
+                        <!-- <div class="block-7 ">
+                            <h3 class="footer-heading mb-4 ">About Us</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quae reiciendis distinctio voluptates sed dolorum excepturi iure eaque, aut unde.</p>
                         </div> -->
                     </div>
-                    <div class="col-lg-3 ml-auto mb-5 mb-lg-0">
-                        <!-- <div class="row">
-                            <div class="col-md-12">
-                                <h3 class="footer-heading mb-4">Quick Links</h3>
+                    <div class="col-lg-3 ml-auto mb-5 mb-lg-0 ">
+                        <!-- <div class="row ">
+                            <div class="col-md-12 ">
+                                <h3 class="footer-heading mb-4 ">Quick Links</h3>
                             </div>
-                            <div class="col-md-6 col-lg-4">
-                                <ul class="list-unstyled">
-                                    <li><a href="#">Sell online</a></li>
-                                    <li><a href="#">Features</a></li>
-                                    <li><a href="#">Shopping cart</a></li>
-                                    <li><a href="#">Store builder</a></li>
+                            <div class="col-md-6 col-lg-4 ">
+                                <ul class="list-unstyled ">
+                                    <li><a href="# ">Sell online</a></li>
+                                    <li><a href="# ">Features</a></li>
+                                    <li><a href="# ">Shopping cart</a></li>
+                                    <li><a href="# ">Store builder</a></li>
                                 </ul>
                             </div>
-                            <div class="col-md-6 col-lg-4">
-                                <ul class="list-unstyled">
-                                    <li><a href="#">Mobile commerce</a></li>
-                                    <li><a href="#">Dropshipping</a></li>
-                                    <li><a href="#">Website development</a></li>
+                            <div class="col-md-6 col-lg-4 ">
+                                <ul class="list-unstyled ">
+                                    <li><a href="# ">Mobile commerce</a></li>
+                                    <li><a href="# ">Dropshipping</a></li>
+                                    <li><a href="# ">Website development</a></li>
                                 </ul>
                             </div>
-                            <div class="col-md-6 col-lg-4">
-                                <ul class="list-unstyled">
-                                    <li><a href="#">Point of sale</a></li>
-                                    <li><a href="#">Hardware</a></li>
-                                    <li><a href="#">Software</a></li>
+                            <div class="col-md-6 col-lg-4 ">
+                                <ul class="list-unstyled ">
+                                    <li><a href="# ">Point of sale</a></li>
+                                    <li><a href="# ">Hardware</a></li>
+                                    <li><a href="# ">Software</a></li>
                                 </ul>
                             </div>
                         </div> -->
-                        <div class="block-5">
-                            <!-- <h3 class="footer-heading mb-4">Contact Info</h3> -->
-                            <ul class="list-unstyled">
-                                <li class="phone" style="color: white;"><a href="tel://+91 8976867959" style="color: white;">+91&nbsp;897&nbsp;686&nbsp;7959</a></li>
-                                <li class="email" style="color: white;"><a href="mailto:thecaspianwinds@gmail.com" style="color: white;">thecaspianwinds@gmail.com</a></li>
-                                <li class="address" style="color: white;">Mumbai, India</li>
+                        <div class="block-5 ">
+                            <!-- <h3 class="footer-heading mb-4 ">Contact Info</h3> -->
+                            <ul class="list-unstyled ">
+                                <li class="phone " style="color: white; "><a href="tel://+91 8976867959 " style="color: white; ">+91&nbsp;897&nbsp;686&nbsp;7959</a></li>
+                                <li class="email " style="color: white; "><a href="mailto:thecaspianwinds@gmail.com " style="color: white; ">thecaspianwinds@gmail.com</a></li>
+                                <li class="address " style="color: white; ">Mumbai, India</li>
                             </ul>
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-5">
-                        <div class="block-7">
-                            <!-- <form action="#" method="post">
-                                <label for="email_subscribe" class="footer-heading">Subscribe</label>
-                                <div class="form-group">
-                                    <input type="text" class="form-control py-4" id="email_subscribe" placeholder="Email">
-                                    <input type="submit" class="btn btn-sm btn-primary" value="Send">
+                    <div class="col-md-6 col-lg-5 ">
+                        <div class="block-7 ">
+                            <!-- <form action="# " method="post ">
+                                <label for="email_subscribe " class="footer-heading ">Subscribe</label>
+                                <div class="form-group ">
+                                    <input type="text " class="form-control py-4 " id="email_subscribe " placeholder="Email ">
+                                    <input type="submit " class="btn btn-sm btn-primary " value="Send ">
                                 </div>
-                                <div style="color: white;"> <i class="fa fa-instagram" style="color: white;"></i>&nbsp;<i class="fa fa-facebook"></i>&nbsp;<i class="fa fa-twitter"></i>&nbsp;<i class="fa fa-amazon"></i></div>
+                                <div style="color: white; "> <i class="fa fa-instagram " style="color: white; "></i>&nbsp;<i class="fa fa-facebook "></i>&nbsp;<i class="fa fa-twitter "></i>&nbsp;<i class="fa fa-amazon "></i></div>
                             </form> -->
-                            <p style="color: white;text-align: center;font-size: 20px;font-family: monospace;">Style is a way to say who you are without having to speak <br><span style="font-family: -webkit-pictograph;float: right;">Rachel Zoe</span></p>
+                            <p style="color: white;text-align: center;font-size: 20px;font-family: monospace; ">Style is a way to say who you are without having to speak <br><span style="font-family: -webkit-pictograph;float: right; ">Rachel Zoe</span></p>
                         </div>
                     </div>
                 </div>
-                <div class="row text-center" style="border-top: 1px solid;padding-top: 10px;">
-                    <div class="col-md-12">
+                <div class="row text-center " style="border-top: 1px solid;padding-top: 10px; ">
+                    <div class="col-md-12 ">
                         <p>
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                             Copyright &copy;
@@ -554,15 +597,15 @@
         </footer>
     </div>
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/jquery-ui.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/aos.js"></script>
+    <script src="js/jquery-3.3.1.min.js "></script>
+    <script src="js/jquery-ui.js "></script>
+    <script src="js/popper.min.js "></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/owl.carousel.min.js "></script>
+    <script src="js/jquery.magnific-popup.min.js "></script>
+    <script src="js/aos.js "></script>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.js "></script>
 
 </body>
 
